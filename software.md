@@ -72,7 +72,6 @@ We will be able to do generalized linear models using built-in packages in R, bu
 ```r
 install.packages("pscl")
 install.packages("MASS")
-install.packages("polr")
 install.packages("ordinal")
 install.packages("multinom")
 ```
