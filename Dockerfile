@@ -11,4 +11,5 @@ RUN sudo apt-get update && \
 	sudo apt-get install -y --no-install-recommends \
 	texlive-fonts-recommended \
   texlive-fonts-extra \
-  texlive-bibtex-extra
+  texlive-bibtex-extra \
+  texlive-plain-generic
