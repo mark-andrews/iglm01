@@ -537,12 +537,16 @@ M1 <- glm.nb(publications ~ gender + married + I(children > 0), data = biochemis
 $$
 \begin{aligned}
 y_i &\sim \textrm{Binomial}(\theta_i, n_i),\\
-\theta_i &= \beta_0 + \sum_{k=1}^K \beta_k x_{ki}
+\textrm{logit}(\theta_i) &= \beta_0 + \sum_{k=1}^K \beta_k x_{ki}
 \end{aligned}
 $$
 
+* If $n_i = 1$ for all $i$, then this is exactly binary logistic regression.
+
+* In general, it models the probability of something happening in a number of independent trials, and how the probability varies by the values of predictors.
+
 # Example 
-```{r}
+```{r, echo=T}
 golf_df <- read_csv(here('data/golf_putts.csv')) %>% 
   mutate(failure = attempts - success,
          p = success/attempts)
