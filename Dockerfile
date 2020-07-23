@@ -3,7 +3,8 @@ FROM xmjandrews/verse:20.07.15
 RUN install2.r --error here \
                        pander \
                        pscl \
-                       nnet
+                       nnet \
+                       cowplot
 
 RUN rm -rf /tmp/downloaded_packages /tmp/*.rds
 
