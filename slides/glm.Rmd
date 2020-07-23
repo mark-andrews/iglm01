@@ -502,5 +502,40 @@ add_predictions(admit_df_new, M, type = 'probs')
 
 # compare to
 plogis(q = M$zeta, location = M$coefficients * 600)
+
+
+```
+
+# Categorical logistic regression
+
+* If each $y_i \in \{1, 2 \ldots L\}$, where these $L$ values are treated as categorically distinct, then we model $y_i$ as follows.
+$$
+\log\left(\frac{\Prob{y_i = l}}{\Prob{y_i = 1}}\right) =  \beta_{l0} + \sum_{k=1}^K \beta_{lk} x_{ki},\quad \text{for $l \in \{2 \ldots L\}$ },
+$$
+and 
+$$
+\log\left(\frac{\Prob{y_i = 1}}{\Prob{y_i = 1}}\right) =  0.
+$$
+* This is equivalent to 
+$$
+\Prob{y_i = l} = \frac{e^{z_{li}}}{1 + \sum_{l=2}^L e^{z_{li}}},
+$$
+where
+$$
+z_{li} = \beta_{l0} + \sum_{k=1}^K \beta_{lk} x_{ki}.
+$$
+
+# Examples 
+
+```{r, echo=T, results='hide'}
+library(nnet)
+M <- multinom(score ~ gre.quant, data=admit)
+
+
+add_predictions(admit_df_new, M, type = 'probs')
+
+# Compare to
+z <- coef(M) %*% c(1, 600)
+c(1, exp(z)) / sum(c(1, exp(z)))
 ```
 
