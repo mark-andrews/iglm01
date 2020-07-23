@@ -1,5 +1,5 @@
 ---
-title: "From Normal to General to Generalized Linear Models"
+title: "Generalized Linear Models"
 author: |
   | Mark Andrews
   | Psychology Department, Nottingham Trent University
