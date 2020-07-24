@@ -11,5 +11,6 @@ These are password protected, and you will have been given this password in the 
 
 * [Session 1: 10am to 12pm](https://vimeo.com/441343215)
 * [Session 2: 1pm to 3pm](https://vimeo.com/441399088)
-* Session 3: 3pm to 5pm
+* [Session 3: 3pm to 4:15pm](https://vimeo.com/441407930) Part I. Up to around 1hr 15min, at which point the internet went down for a minute.
+* [Session 3: 4:15pm to 5pm](https://vimeo.com/441409020) Part II. Remaining 45 minutes.
 
