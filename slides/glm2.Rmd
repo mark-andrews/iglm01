@@ -425,7 +425,7 @@ tibble(x = seq(0, n),
 - A *negative* binomial distribution gives the 
   probability distribution over the number of *failures* (e.g. Tails)
   before $r$ *successes* (e.g. $r$ Heads).
-- For example, here we have the number of Heads (*successes*) that occur before we observe $r=2$ Tails (*failures*), when the probability of Heads is $\theta=0.75$:
+- For example, here we have the number of Tails (*failures*) that occur before we observe $r=2$ Heads (*sucesses*), when the probability of Heads is $\theta=0.75$:
 ```{r, out.width='0.8\\textwidth', fig.align='center'}
 
 n <- 25
