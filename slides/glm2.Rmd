@@ -423,8 +423,8 @@ tibble(x = seq(0, n),
 # Negative binomial distribution
 
 - A *negative* binomial distribution gives the 
-  probability distribution over the number of *successes* (e.g. Heads)
-  before $r$ *failures* (e.g. $r$ Tails).
+  probability distribution over the number of *failures* (e.g. Tails)
+  before $r$ *successes* (e.g. $r$ Heads).
 - For example, here we have the number of Heads (*successes*) that occur before we observe $r=2$ Tails (*failures*), when the probability of Heads is $\theta=0.75$:
 ```{r, out.width='0.8\\textwidth', fig.align='center'}
 
@@ -439,7 +439,7 @@ tibble(x = seq(0, n),
   
 # Negative binomial distribution
 
-- Here, we have the number of Heads (*successes*) that occur before we observe $r=3$ Tails (*failures*), when the probability of Heads is $\theta=0.5$:
+- Here, we have the number of Tails (*failures*) that occur before we observe $r=3$ Heads (*successes*), when the probability of Heads is $\theta=0.5$:
 ```{r, out.width='0.9\\textwidth', fig.align='center'}
 n <- 25
 
